@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FitLife | Health & Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>FitLife</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="workouts.html" class="nav-link">Workouts</a></li>
+                <li><a href="nutrition.html" class="nav-link">Nutrition</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Contact <span class="gradient-text">Us</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            <div class="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="workouts-preview">
+        <div class="container">
+            <div class="contact-section">
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Get in Touch</h3>
+                    <p>Ready to start your fitness journey? Have questions about our programs? We're here to help!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Our Location</h4>
+                                <p>123 Fitness Street<br>Health City, HC 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Phone Number</h4>
+                                <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Email Address</h4>
+                                <p>info@fitlife.com<br>support@fitlife.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Working Hours</h4>
+                                <p>Mon - Fri: 6AM - 10PM<br>Sat - Sun: 8AM - 8PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <h3>Send Us a Message</h3>
+                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="membership">Membership Information</option>
+                                <option value="training">Personal Training</option>
+                                <option value="nutrition">Nutrition Consultation</option>
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" placeholder="How can we help you?" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="features" style="padding-top: 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Location</span>
+                <h2>Find Us <span class="gradient-text">Here</span></h2>
+                <p>Visit our fitness center and experience FitLife in person</p>
+            </div>
+            <div data-aos="fade-up" style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986568942881!3d40.697149422113014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="workouts-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">FAQ</span>
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <p>Find answers to common questions about our services</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-question"></i>
+                    </div>
+                    <h3>How do I get started?</h3>
+                    <p>Simply fill out the contact form above or give us a call. We'll schedule a free consultation to discuss your goals and recommend the best program for you.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>What are your membership options?</h3>
+                    <p>We offer flexible membership plans including monthly, quarterly, and annual options. Contact us for current pricing and special promotions.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>Can I cancel anytime?</h3>
+                    <p>Yes! We believe in earning your loyalty. Monthly memberships can be cancelled with 30 days notice. No long-term contracts required.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Do you offer personal training?</h3>
+                    <p>Absolutely! Our certified personal trainers can create customized workout plans and provide one-on-one guidance to help you reach your goals faster.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Quick Help</span>
+                <h2>Need <span class="gradient-text">Immediate Assistance?</span></h2>
+            </div>
+            <div class="nutrition-tips-grid">
+                <div class="nutrition-tip-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tip-icon" style="background: var(--gradient-primary);">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team in real-time. Available Monday to Friday, 9AM - 6PM EST.</p>
+                    <a href="#" class="btn btn-outline btn-sm" style="margin-top: 15px;">Start Chat</a>
+                </div>
+                <div class="nutrition-tip-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tip-icon" style="background: var(--gradient-secondary);">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our team. We're happy to answer your questions over the phone.</p>
+                    <a href="tel:+15551234567" class="btn btn-outline btn-sm" style="margin-top: 15px;">+1 (555) 123-4567</a>
+                </div>
+                <div class="nutrition-tip-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tip-icon" style="background: var(--gradient-accent);">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Help Center</h3>
+                    <p>Browse our comprehensive help center for tutorials, guides, and troubleshooting tips.</p>
+                    <a href="#" class="btn btn-outline btn-sm" style="margin-top: 15px;">Visit Help Center</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <div class="newsletter-text">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get weekly fitness tips, healthy recipes, and exclusive content delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-shape"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Transform Your Life?</h2>
+                <p>Join thousands of members who have already started their fitness journey with FitLife.</p>
+                <div class="cta-buttons">
+                    <a href="workouts.html" class="btn btn-light btn-lg">Explore Workouts</a>
+                    <a href="nutrition.html" class="btn btn-outline-light btn-lg">View Nutrition Plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>FitLife</span>
+                    </a>
+                    <p>Your trusted partner in health and fitness. We're dedicated to helping you achieve your wellness goals through expert guidance and support.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="workouts.html">Workouts</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Medical Disclaimer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Business Information</h4>
+                    <ul>
+                        <li><i class="fas fa-building"></i> FitLife Inc.</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Health City, HC 12345, USA</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@fitlife.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="disclaimer-banner-small">
+                <p><i class="fas fa-info-circle"></i> <strong>Disclaimer:</strong> The information provided on this website is for general informational purposes only and is not intended as medical advice. Always consult with healthcare professionals. <a href="disclaimer.html">Read full disclaimer</a>.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FitLife Inc. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a> | <a href="disclaimer.html">Disclaimer</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-consent-inner">
+            <div class="cookie-consent-text">
+                <h4><i class="fas fa-cookie-bite"></i> Cookie Consent</h4>
+                <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="privacy-policy.html">Read our Privacy Policy</a></p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="btn btn-outline-light btn-sm" id="cookieSettings">Cookie Settings</button>
+                <button class="btn btn-light btn-sm" id="acceptCookies">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

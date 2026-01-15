@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - FitLife | Health & Fitness Tips</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>FitLife</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="workouts.html" class="nav-link">Workouts</a></li>
+                <li><a href="nutrition.html" class="nav-link">Nutrition</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Health & Fitness <span class="gradient-text">Blog</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100">Stay informed with our latest articles, tips, and insights on fitness, nutrition, and overall wellness.</p>
+            <div class="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Blog</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="workouts-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Featured</span>
+                <h2>Latest <span class="gradient-text">Articles</span></h2>
+                <p>Expert advice and insights to help you on your fitness journey</p>
+            </div>
+
+            <!-- Featured Post Grid -->
+            <div class="blog-full-grid">
+                <div class="blog-card-featured" data-aos="fade-up">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop" alt="Featured Article">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category" style="position: static; margin-bottom: 15px;">Featured</span>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 12, 2026</span>
+                            <span><i class="fas fa-clock"></i> 10 min read</span>
+                        </div>
+                        <h3>The Complete Guide to Building a Sustainable Fitness Routine</h3>
+                        <p>Discover how to create a workout routine that you can stick to long-term. Learn about goal setting, progressive overload, and the importance of recovery in building lasting fitness habits.</p>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-sidebar">
+                    <div class="blog-sidebar-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=200&fit=crop" alt="Nutrition Article">
+                            <span class="blog-category">Nutrition</span>
+                        </div>
+                        <div class="blog-content">
+                            <h3>10 Superfoods to Boost Your Immune System</h3>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog-sidebar-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=200&fit=crop" alt="Wellness Article">
+                            <span class="blog-category">Wellness</span>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Mindfulness Practices for Better Mental Health</h3>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles Grid -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">All Articles</span>
+                <h2>Browse Our <span class="gradient-text">Content Library</span></h2>
+            </div>
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=250&fit=crop" alt="Strength Training">
+                        <span class="blog-category">Fitness</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 10, 2026</span>
+                            <span><i class="fas fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>The Ultimate Guide to Building Muscle at Home</h3>
+                        <p>Learn effective techniques for muscle building without gym equipment. Bodyweight exercises that deliver real results.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&h=250&fit=crop" alt="Healthy Eating">
+                        <span class="blog-category">Nutrition</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 8, 2026</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>Meal Prep 101: Save Time and Eat Healthier</h3>
+                        <p>Master the art of meal prepping with our beginner-friendly guide. Tips, recipes, and storage solutions included.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=250&fit=crop" alt="Yoga">
+                        <span class="blog-category">Wellness</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 5, 2026</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Yoga for Beginners: Start Your Practice Today</h3>
+                        <p>Everything you need to know to start practicing yoga. Basic poses, breathing techniques, and mindfulness tips.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=250&fit=crop" alt="HIIT">
+                        <span class="blog-category">Fitness</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 3, 2026</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3>HIIT vs. Steady-State Cardio: Which is Better?</h3>
+                        <p>Compare the benefits of high-intensity interval training versus traditional cardio. Find what works best for your goals.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?w=400&h=250&fit=crop" alt="Sleep">
+                        <span class="blog-category">Wellness</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 30, 2025</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>The Importance of Sleep for Muscle Recovery</h3>
+                        <p>Discover why sleep is crucial for fitness gains. Tips for improving sleep quality and optimizing recovery.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=400&h=250&fit=crop" alt="Hydration">
+                        <span class="blog-category">Nutrition</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 28, 2025</span>
+                            <span><i class="fas fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3>Hydration Guide: How Much Water Do You Really Need?</h3>
+                        <p>Learn about proper hydration for optimal performance. Signs of dehydration and tips for drinking more water.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&h=250&fit=crop" alt="Running">
+                        <span class="blog-category">Fitness</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 25, 2025</span>
+                            <span><i class="fas fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>From Couch to 5K: A Beginner's Running Guide</h3>
+                        <p>Start your running journey with this progressive training plan designed for complete beginners.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?w=400&h=250&fit=crop" alt="Protein">
+                        <span class="blog-category">Nutrition</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 22, 2025</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>Complete Guide to Protein: Sources and Benefits</h3>
+                        <p>Everything you need to know about protein for muscle building. Best sources and how much you need.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=250&fit=crop" alt="Stretching">
+                        <span class="blog-category">Fitness</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 20, 2025</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>The Science of Stretching: Before or After Workout?</h3>
+                        <p>Learn when and how to stretch for optimal performance and injury prevention. Dynamic vs. static stretching explained.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-8" data-aos="fade-up">
+                <a href="#" class="btn btn-outline btn-lg">Load More Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Tips Quick Section -->
+    <section class="workouts-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Quick Tips</span>
+                <h2>Daily Health <span class="gradient-text">Tips</span></h2>
+                <p>Simple habits that make a big difference</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3>Move Every Hour</h3>
+                    <p>Take a short walk or stretch every hour if you have a desk job. It improves circulation and reduces back pain.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Practice Gratitude</h3>
+                    <p>Start each day by listing three things you're grateful for. This simple habit improves mental health and outlook.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <h3>Eat More Veggies</h3>
+                    <p>Aim to fill half your plate with vegetables at every meal. They're packed with nutrients and fiber.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Prioritize Sleep</h3>
+                    <p>Establish a consistent sleep schedule. Quality sleep is essential for recovery, mood, and overall health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <div class="newsletter-text">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get weekly fitness tips, healthy recipes, and exclusive content delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-shape"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Start Your <span class="gradient-text">Fitness Journey?</span></h2>
+                <p>Join our community and get access to exclusive content, workout plans, and expert advice.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-light btn-lg">Get Started Free</a>
+                    <a href="workouts.html" class="btn btn-outline-light btn-lg">Explore Workouts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>FitLife</span>
+                    </a>
+                    <p>Your trusted partner in health and fitness. We're dedicated to helping you achieve your wellness goals through expert guidance and support.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="workouts.html">Workouts</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Medical Disclaimer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Business Information</h4>
+                    <ul>
+                        <li><i class="fas fa-building"></i> FitLife Inc.</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Health City, HC 12345, USA</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@fitlife.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="disclaimer-banner-small">
+                <p><i class="fas fa-info-circle"></i> <strong>Disclaimer:</strong> The information in our articles is for educational purposes only and should not be considered medical advice. Always consult with healthcare professionals for personalized guidance. <a href="disclaimer.html">Read full disclaimer</a>.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FitLife Inc. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a> | <a href="disclaimer.html">Disclaimer</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-consent-inner">
+            <div class="cookie-consent-text">
+                <h4><i class="fas fa-cookie-bite"></i> Cookie Consent</h4>
+                <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="privacy-policy.html">Read our Privacy Policy</a></p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="btn btn-outline-light btn-sm" id="cookieSettings">Cookie Settings</button>
+                <button class="btn btn-light btn-sm" id="acceptCookies">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

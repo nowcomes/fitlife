@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts - FitLife | Health & Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>FitLife</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="workouts.html" class="nav-link active">Workouts</a></li>
+                <li><a href="nutrition.html" class="nav-link">Nutrition</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Workout <span class="gradient-text">Programs</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100">Discover our comprehensive workout programs designed for all fitness levels. From strength training to yoga, we have something for everyone.</p>
+            <div class="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Workouts</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Categories -->
+    <section class="workouts-section">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="workout-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Workouts</button>
+                <button class="filter-btn" data-filter="strength">Strength</button>
+                <button class="filter-btn" data-filter="cardio">Cardio</button>
+                <button class="filter-btn" data-filter="yoga">Yoga</button>
+                <button class="filter-btn" data-filter="hiit">HIIT</button>
+                <button class="filter-btn" data-filter="stretching">Stretching</button>
+            </div>
+
+            <!-- Workouts Grid -->
+            <div class="workouts-full-grid">
+                <!-- Strength Training -->
+                <div class="workout-card-full" data-category="strength" data-aos="fade-up" data-aos-delay="100">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=350&fit=crop" alt="Full Body Strength">
+                        <div class="workout-overlay">
+                            <span class="workout-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">Strength</span>
+                            <span class="workout-tag">Full Body</span>
+                        </div>
+                        <h3>Full Body Strength Training</h3>
+                        <p>Build overall strength with compound movements targeting all major muscle groups. Perfect for building a solid foundation.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>45 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>400 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Equipment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HIIT Cardio -->
+                <div class="workout-card-full" data-category="hiit" data-aos="fade-up" data-aos-delay="200">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&h=350&fit=crop" alt="HIIT Cardio">
+                        <div class="workout-overlay">
+                            <span class="workout-level">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">HIIT</span>
+                            <span class="workout-tag">Fat Burn</span>
+                        </div>
+                        <h3>High Intensity Interval Training</h3>
+                        <p>Maximize calorie burn with intense intervals followed by short rest periods. Great for improving cardiovascular fitness.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>30 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>500 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-home"></i>
+                                <span>No Equipment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yoga Flow -->
+                <div class="workout-card-full" data-category="yoga" data-aos="fade-up" data-aos-delay="300">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&h=350&fit=crop" alt="Yoga Flow">
+                        <div class="workout-overlay">
+                            <span class="workout-level">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">Yoga</span>
+                            <span class="workout-tag">Flexibility</span>
+                        </div>
+                        <h3>Morning Yoga Flow</h3>
+                        <p>Start your day with energizing yoga poses that improve flexibility, balance, and mental clarity. Suitable for all levels.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>60 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>200 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-spa"></i>
+                                <span>Mat Only</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upper Body -->
+                <div class="workout-card-full" data-category="strength" data-aos="fade-up" data-aos-delay="100">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=500&h=350&fit=crop" alt="Upper Body Workout">
+                        <div class="workout-overlay">
+                            <span class="workout-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">Strength</span>
+                            <span class="workout-tag">Upper Body</span>
+                        </div>
+                        <h3>Upper Body Power</h3>
+                        <p>Target your chest, back, shoulders, and arms with this focused upper body routine designed to build muscle and definition.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>40 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>350 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Dumbbells</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cardio Dance -->
+                <div class="workout-card-full" data-category="cardio" data-aos="fade-up" data-aos-delay="200">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?w=500&h=350&fit=crop" alt="Cardio Dance">
+                        <div class="workout-overlay">
+                            <span class="workout-level">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">Cardio</span>
+                            <span class="workout-tag">Dance</span>
+                        </div>
+                        <h3>Cardio Dance Party</h3>
+                        <p>Get your heart pumping with fun dance moves that don't feel like exercise. Perfect for those who love to move to the beat.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>45 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>450 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-home"></i>
+                                <span>No Equipment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stretching -->
+                <div class="workout-card-full" data-category="stretching" data-aos="fade-up" data-aos-delay="300">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&h=350&fit=crop" alt="Deep Stretching">
+                        <div class="workout-overlay">
+                            <span class="workout-level">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">Stretching</span>
+                            <span class="workout-tag">Recovery</span>
+                        </div>
+                        <h3>Deep Stretch & Recovery</h3>
+                        <p>Improve flexibility and aid muscle recovery with this gentle stretching routine. Perfect after intense workouts or on rest days.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>30 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>100 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-spa"></i>
+                                <span>Mat Only</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lower Body -->
+                <div class="workout-card-full" data-category="strength" data-aos="fade-up" data-aos-delay="100">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1434608519344-49d77a699e1d?w=500&h=350&fit=crop" alt="Lower Body Workout">
+                        <div class="workout-overlay">
+                            <span class="workout-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">Strength</span>
+                            <span class="workout-tag">Lower Body</span>
+                        </div>
+                        <h3>Leg Day Burner</h3>
+                        <p>Build strong, toned legs with squats, lunges, and deadlifts. This comprehensive leg workout targets all major muscle groups.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>50 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>450 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Equipment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabata -->
+                <div class="workout-card-full" data-category="hiit" data-aos="fade-up" data-aos-delay="200">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?w=500&h=350&fit=crop" alt="Tabata Workout">
+                        <div class="workout-overlay">
+                            <span class="workout-level">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">HIIT</span>
+                            <span class="workout-tag">Tabata</span>
+                        </div>
+                        <h3>Tabata Extreme</h3>
+                        <p>20 seconds of all-out effort followed by 10 seconds of rest. This intense protocol maximizes results in minimal time.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>20 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>400 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-home"></i>
+                                <span>No Equipment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power Yoga -->
+                <div class="workout-card-full" data-category="yoga" data-aos="fade-up" data-aos-delay="300">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=500&h=350&fit=crop" alt="Power Yoga">
+                        <div class="workout-overlay">
+                            <span class="workout-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">Yoga</span>
+                            <span class="workout-tag">Strength</span>
+                        </div>
+                        <h3>Power Yoga Challenge</h3>
+                        <p>Combine strength and flexibility with this dynamic yoga practice. Build lean muscle while improving your balance and focus.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>45 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>300 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-spa"></i>
+                                <span>Mat Only</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Running -->
+                <div class="workout-card-full" data-category="cardio" data-aos="fade-up" data-aos-delay="100">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&h=350&fit=crop" alt="Running Program">
+                        <div class="workout-overlay">
+                            <span class="workout-level">All Levels</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">Cardio</span>
+                            <span class="workout-tag">Outdoor</span>
+                        </div>
+                        <h3>Couch to 5K Program</h3>
+                        <p>Start running with this progressive program designed to take beginners from zero to running 5 kilometers in 8 weeks.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>30 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>350 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-running"></i>
+                                <span>Outdoors</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Workout -->
+                <div class="workout-card-full" data-category="strength" data-aos="fade-up" data-aos-delay="200">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=350&fit=crop" alt="Core Workout">
+                        <div class="workout-overlay">
+                            <span class="workout-level">All Levels</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">Strength</span>
+                            <span class="workout-tag">Core</span>
+                        </div>
+                        <h3>Core Crusher</h3>
+                        <p>Strengthen your core with targeted exercises for abs, obliques, and lower back. Essential for overall fitness and posture.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>25 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>200 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-spa"></i>
+                                <span>Mat Only</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobility -->
+                <div class="workout-card-full" data-category="stretching" data-aos="fade-up" data-aos-delay="300">
+                    <div class="workout-image">
+                        <img src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4?w=500&h=350&fit=crop" alt="Mobility Training">
+                        <div class="workout-overlay">
+                            <span class="workout-level">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="workout-info">
+                        <div class="workout-tags">
+                            <span class="workout-tag">Stretching</span>
+                            <span class="workout-tag">Mobility</span>
+                        </div>
+                        <h3>Full Body Mobility</h3>
+                        <p>Improve joint mobility and movement quality with this comprehensive routine. Essential for injury prevention and performance.</p>
+                        <div class="workout-details">
+                            <div class="workout-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>20 min</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-fire"></i>
+                                <span>80 cal</span>
+                            </div>
+                            <div class="workout-detail">
+                                <i class="fas fa-home"></i>
+                                <span>No Equipment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Tips Section -->
+    <section class="features" id="tips">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Pro Tips</span>
+                <h2>Maximize Your <span class="gradient-text">Workout Results</span></h2>
+                <p>Follow these expert tips to get the most out of every training session</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Warm Up Properly</h3>
+                    <p>Always start with 5-10 minutes of light cardio and dynamic stretches to prepare your body and prevent injuries.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Stay Hydrated</h3>
+                    <p>Drink water before, during, and after your workout. Proper hydration is essential for optimal performance.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progressive Overload</h3>
+                    <p>Gradually increase weight, reps, or intensity to continue making progress and avoid plateaus.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Rest & Recover</h3>
+                    <p>Give your muscles time to repair. Aim for 7-9 hours of sleep and take rest days as needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-shape"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Transform Your Body?</h2>
+                <p>Start your fitness journey today with our expert-designed workout programs.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-light btn-lg">Get Started Free</a>
+                    <a href="nutrition.html" class="btn btn-outline-light btn-lg">View Nutrition Plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>FitLife</span>
+                    </a>
+                    <p>Your trusted partner in health and fitness. We're dedicated to helping you achieve your wellness goals through expert guidance and support.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="workouts.html">Workouts</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Medical Disclaimer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Business Information</h4>
+                    <ul>
+                        <li><i class="fas fa-building"></i> FitLife Inc.</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Health City, HC 12345, USA</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@fitlife.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="disclaimer-banner-small">
+                <p><i class="fas fa-info-circle"></i> <strong>Disclaimer:</strong> The workout information provided is for educational purposes only. Always consult with a healthcare professional before starting any exercise program. Individual results may vary. <a href="disclaimer.html">Read full disclaimer</a>.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FitLife Inc. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a> | <a href="disclaimer.html">Disclaimer</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-consent-inner">
+            <div class="cookie-consent-text">
+                <h4><i class="fas fa-cookie-bite"></i> Cookie Consent</h4>
+                <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="privacy-policy.html">Read our Privacy Policy</a></p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="btn btn-outline-light btn-sm" id="cookieSettings">Cookie Settings</button>
+                <button class="btn btn-light btn-sm" id="acceptCookies">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
